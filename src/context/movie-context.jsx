@@ -8,7 +8,7 @@ const MovieProvider = ({ children }) => {
 
 
   const filteredMovies = filtersHandler(state);
-  console.log({filteredMovies})
+  console.log('starred' ,state.starred)
   return (
     <MovieContext.Provider
     value={{

@@ -3,7 +3,6 @@ export const filtersHandler = (state) => {
     moviesData,
     filters: { genre, releaseYear, rating, searchValue },
   } = state;
-  console.log({ moviesData });
   let newData = moviesData;
   newData =
     genre === "all"
