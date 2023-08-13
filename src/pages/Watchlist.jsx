@@ -7,8 +7,11 @@ const Watchlist = () => {
 
   return (
     <div className="px-8 py-6 ">
+      <div>
+        <h1 className="font-medium text-2xl text-start">{">> Your Watchlist"}</h1>
+      </div>
     {watchlist.length > 0 ? (
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid grid-cols-3 gap-10 mt-6S">
         {watchlist?.map((movie, idx) => {
           return <StarredMoviesCard key={idx} movie={movie} starred />;
         })}
